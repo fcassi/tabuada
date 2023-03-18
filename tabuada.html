@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada </title>
+</head>
+<body>
+    <h1>Tabuada do 7</h1>
+    <div id = "tabuada"></div>
+    <script>
+        //-------------------------Variáveis------------------------
+        let multi = Number(prompt("Digite o número que você quer ver a tabuada! (x * 1 ao 10)"))
+        //----------------------------------------------------------
+
+        for (let num = 0; num<=10; num++) {
+            document.getElementById("tabuada").innerHTML += multi +" x " + num + " = " + num*multi + "</br>"
+        }
+    </script>
+</body>
+</html>
